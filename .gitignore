@@ -1,0 +1,39 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python packaging
+*.egg-info/
+pip-wheel-metadata/
+
+# Data / large files (keep dataset directory explicit if you want to track small CSVs)
+/data/
+datasets/
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.pkl
+
+# Secrets
+.env
+.env.*
