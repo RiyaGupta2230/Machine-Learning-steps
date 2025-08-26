@@ -1,22 +1,38 @@
+
 # Machine Learning Steps
 
-This repository contains a set of classroom labs and example datasets for introductory machine learning exercises.
+This repository contains classroom labs and example datasets for introductory machine learning exercises.
 
 Contents
 - `Lab1.ipynb` .. `Lab6.ipynb` — Jupyter notebooks with lab exercises.
 - `All_classifiers.ipynb` — Notebook comparing classifiers.
 - `Iris.csv`, `advertising.csv` — Example datasets used by the notebooks.
 
-Quick start
-1. Install dependencies (recommended): Python 3.8+ with `pandas`, `numpy`, `scikit-learn`, and `jupyter`.
-2. From the repository root, launch Jupyter:
+Quick start (Windows PowerShell)
+1. Create and activate a virtual environment (recommended):
 
-   jupyter notebook
+   python -m venv .venv
+   .\.venv\Scripts\Activate.ps1
 
-3. Open any `*.ipynb` file and run the cells.
+2. Install Python dependencies:
+
+   pip install -r requirements.txt
+
+3. Launch Jupyter and open a notebook:
+
+   python -m jupyter notebook
+
+4. Open any `*.ipynb` file and run the cells.
+
+Files added in this repo
+- `.gitignore` — ignores `.ipynb_checkpoints/`, virtualenv folders, IDE settings, and common large dataset/file types so workbook folders stay clean.
+- `requirements.txt` — lists common packages used by the notebooks (pandas, numpy, scikit-learn, jupyter, matplotlib, seaborn).
 
 Notes
-- The notebooks may generate output and checkpoint files; consider adding a `.gitignore` to exclude `.ipynb_checkpoints/` and large data files if you add more datasets.
-- This repo was pushed to: https://github.com/RiyaGupta2230/Machine-Learning-steps
+- For exact environment reproduction I can generate pinned versions from your current environment (a full `requirements.txt`) or an `environment.yml` for conda if you prefer.
+- Small contributions: edit notebooks or add a new `notebooks/` folder; commit on a feature branch and open a PR.
 
-If you'd like, I can add a `.gitignore` and a short environment `requirements.txt` next.
+Repository
+- This repository is pushed to: https://github.com/RiyaGupta2230/Machine-Learning-steps
+
+If you want, I will also create a short CONTRIBUTING.md and a license file next.
